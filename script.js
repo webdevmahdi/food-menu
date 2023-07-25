@@ -1,3 +1,10 @@
+let searchField = document.getElementById('search-food');
+let searchBtn = document.getElementById('search-button');
+searchField.addEventListener('keypress', function(event){
+    if(event.keyCode == 13){
+        searchBtn.click();
+    }
+})
 let food = () => {
     let searchFood = document.getElementById('search-food');
     let searchFoodText = searchFood.value;
